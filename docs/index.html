@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[K] Recent Activity - MyCase</title>
+  <meta name="viewport" content="width=1100" />
+  <link rel="stylesheet" href="https://assets.mycasekegging.com/packs/bootstrap-mycase-ed189f16e6.css" />
+  <style>
+    /* Temp add some borders, need to fix in theme */
+    .nav-tabs .nav-link {
+      border-color:  rgba(255,255,255,0.25);
+      margin-right: .1rem;
+    }
+    /* Some ustom CSS we needed for logo: */
+    #mycase_logo {
+      max-width: 300px;
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      float: left;
+      display: table;
+      overflow: hidden;
+    }
+    #mycase_logo .powered-by-mc {
+      background-image: url('/packs/powered_by_mycase-c9bd821268.png');
+      background-position-y: center;
+      background-repeat: no-repeat;
+      height: 27px;
+      width: 56px;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="https://appfolio.github.io/bootstrap-mycase-focus/bootstrap-mycase-focus.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uao7jmm.css">
+</head>
+<body class='legacy pb-5'>
+  <div class="bg-dark">
+    <div>
+      <div id='mycase_logo'>
+        <a href="https://kegging-law.mycasekegging.com/dashboard"><img class="logo custom-logo" src="https://s3.amazonaws.com/com.mycase.stag3-main/fog/firm_logo/filename/61/header_Logo_100_A.png" alt="Header logo 100 a" /></a><a class="powered-by-mc" href="https://kegging-law.mycasekegging.com/dashboard"></a>
+      </div>
+
+      <div class="p-2">
+        <div class="d-flex justify-content-end">
+          <div class="btn-group btn-group-sm">
+            <a class="btn btn-link text-light" id="refer-a-friend-link" data-sender-first-name="Gary" data-sender-email="gary.thomas@appfolio.com" href="#">Refer a Friend</a>
+            <a class="btn btn-link text-light" target="_blank" href="https://kegging-law.mycasekegging.com/support">Get Support</a>
+            <a class="btn btn-link text-light" rel="facebox" href="/dashboard/load_feedback?mailer_type=feedback">Make a Suggestion</a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What's New <sup class="badge badge-pill badge-danger">2</sup>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Oogah</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Chaka</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-cog" aria-hidden="true"></i> Gary Thomas
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Settings</a>
+              <a class="dropdown-item" href="#">Update Profile Picture</a>
+              <a class="dropdown-item" href="#">Integrations & Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+
+          <div>
+            <form onsubmit="return false;" id="search_box_form" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input type="text" name="search_term" id="main_search_bar" value="" class="form-control" placeholder="Find clients, cases, and items…" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div class="pt-2">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Calendar <sup class="badge badge-pill badge-danger">91</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Tasks <sup class="badge badge-pill badge-danger">19</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Documents <sup class="badge badge-pill badge-danger">117</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Billing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Reporting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Messages <sup class="badge badge-pill badge-danger">10</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Comments <sup class="badge badge-pill badge-danger">30</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Leads</a>
+            </li>
+            <li class="nav-item ml-auto mr-1">
+              <a class="nav-link text-warning" href="#">...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#"><i class="fa fa-plus fa-lg"></i> Add Item</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-2 bg-light border-bottom">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="https://kegging-law.mycasekegging.com/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="https://kegging-law.mycasekegging.com/notifications">Recent Activity</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="main_content" class="p-4">
+
+    <div id="notifications-container" data-feeds="[&quot;all&quot;,&quot;bills&quot;,&quot;retainer_requests&quot;,&quot;time_entries&quot;,&quot;expenses&quot;,&quot;events_and_rules&quot;,&quot;documents&quot;,&quot;tasks&quot;]" data-page-size="10">
+      <div id="notifications-components" class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h4 class="card-title">Recent Activity</h4>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="#All">All</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Invoices">Invoices</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Deposit Requests">Deposit Requests</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Time Entries">Time Entries</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Expenses">Expenses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Events">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Documents">Documents</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Tasks">Tasks</a></li>
+          </ul>
+        </div>
+          <div class="paged-notifications">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item d-flex align-items-center">
+                <div class="icon mr-2">
+                  <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_document_updated-6df78918fe.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_document_updated@2x-8fbc6af9d3.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_document_updated-6df78918fe.png" alt="Activity document updated 6df78918fe" width="27" height="21">
+                </div>
+                <div class="details">
+                  <div class="action">
+                      <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/77384">Simon Bui (Attorney)</a>
+                    <span class="notification-activity-description"><span class="truncate-text">updated template <a class="truncate-text" href="https://kegging-law.mycasekegging.com/documents/86507">Client Engagement Letter Template.docx</a></span></span>
+                  </div>
+                  <div class="info">
+                    <span class="notification-info-time"><abbr class="timeago" title="2019-01-23 10:35:25 -0800">about 6 hours ago</abbr></span>
+                    via
+                    <span class="notification-info-via">web</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item d-flex align-items-center">
+                <div class="icon mr-2">
+                  <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_bill_viewed-11fb1010a1.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_bill_viewed@2x-d0d7492b3e.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_bill_viewed-11fb1010a1.png" alt="Activity bill viewed 11fb1010a1" width="27" height="21">
+                </div>
+                <div class="details">
+                  <div class="action">
+                      <a class="notification-user-link" href="/contacts/clients/32262">Jake Kozo (Client)</a>
+                    <span class="notification-activity-description"><span class="truncate-text">has viewed invoice <a class="truncate-text" href="https://kegging-law.mycasekegging.com/bills/3896">#1234569456</a></span></span>
+                  </div>
+                  <div class="info">
+                    <span class="notification-info-time"><abbr class="timeago" title="2019-01-23 09:37:56 -0800">about 7 hours ago</abbr></span>
+                    via
+                    <span class="notification-info-via">web</span>
+                      |
+                      <span class="truncate-text notification-info-additional">
+                          <a href="/court_cases/5747">gasdgsdag</a>
+                      </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item d-flex align-items-center">
+                <div class="icon mr-2">
+                  <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_bill_paid-cebb9349ac.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_bill_paid@2x-ef164546ec.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_bill_paid-cebb9349ac.png" alt="Activity bill paid cebb9349ac" width="27" height="21">
+                </div>
+                <div class="details">
+                  <div class="action">
+                      <a class="notification-user-link" href="/contacts/clients/32262">Jake Kozo (Client)</a>
+                    <span class="notification-activity-description"><span class="truncate-text">paid $100.00 (Credit Card #879-127B3 via portal) on invoice <a class="truncate-text" href="https://kegging-law.mycasekegging.com/bills/3896">#1234569456</a></span></span>
+                  </div>
+                  <div class="info">
+                    <span class="notification-info-time"><abbr class="timeago" title="2019-01-23 09:37:51 -0800">about 7 hours ago</abbr></span>
+                    via
+                    <span class="notification-info-via">web</span>
+                      |
+                      <span class="truncate-text notification-info-additional">
+                          <a href="/court_cases/5747">gasdgsdag</a>
+                      </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item d-flex align-items-center">
+                <div class="icon mr-2">
+                  <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_login-716086200f.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_login@2x-7a0af552cf.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_login-716086200f.png" alt="Activity client login 716086200f" width="27" height="21">
+                </div>
+                <div class="details">
+                  <div class="action">
+                      <a class="notification-user-link" href="/contacts/clients/32262">Jake Kozo (Client)</a>
+                    <span class="notification-activity-description"><span class="truncate-text">logged in to MyCase</span></span>
+                  </div>
+                  <div class="info">
+                    <span class="notification-info-time"><abbr class="timeago" title="2019-01-23 09:37:08 -0800">about 7 hours ago</abbr></span>
+                    via
+                    <span class="notification-info-via">web</span>
+                  </div>
+                </div>
+              </div>
+            <div class="list-group-item d-flex align-items-center">
+            <div class="icon mr-2">
+              <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_updated@2x-c49c4287e3.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png" alt="Activity client updated d95a194bf9" width="27" height="21">
+            </div>
+            <div class="details">
+              <div class="action">
+                  <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/87052">Leiasa Horanic (Attorney)</a>
+                <span class="notification-activity-description"><span class="truncate-text">updated contact <a class="truncate-text" href="https://kegging-law.mycasekegging.com/contacts/clients/102863">Leiasa L (Client)</a></span></span>
+              </div>
+              <div class="info">
+                <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:33:02 -0800">a day ago</abbr></span>
+                via
+                <span class="notification-info-via">web</span>
+              </div>
+            </div>
+          </div>
+        <div class="list-group-item d-flex align-items-center">
+          <div class="icon mr-2">
+            <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_updated@2x-c49c4287e3.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png" alt="Activity client updated d95a194bf9" width="27" height="21">
+          </div>
+          <div class="details">
+            <div class="action">
+                <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/87052">Leiasa Horanic (Attorney)</a>
+              <span class="notification-activity-description"><span class="truncate-text">updated contact <a class="truncate-text" href="https://kegging-law.mycasekegging.com/contacts/clients/87053">Leiasa H (Client)</a></span></span>
+            </div>
+            <div class="info">
+              <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:32:42 -0800">a day ago</abbr></span>
+              via
+              <span class="notification-info-via">web</span>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item d-flex align-items-center">
+          <div class="icon mr-2">
+            <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_updated@2x-c49c4287e3.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png" alt="Activity client updated d95a194bf9" width="27" height="21">
+          </div>
+          <div class="details">
+            <div class="action">
+                <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/82327">Cameron Chaloux (Attorney)</a>
+              <span class="notification-activity-description"><span class="truncate-text">updated contact <a class="truncate-text" href="https://kegging-law.mycasekegging.com/contacts/clients/166256">Cameron Chaloux (Client)</a></span></span>
+            </div>
+            <div class="info">
+              <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:30:18 -0800">a day ago</abbr></span>
+              via
+              <span class="notification-info-via">web</span>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item d-flex align-items-center">
+          <div class="icon mr-2">
+            <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_updated@2x-c49c4287e3.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_updated-d95a194bf9.png" alt="Activity client updated d95a194bf9" width="27" height="21">
+          </div>
+          <div class="details">
+            <div class="action">
+                <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/82327">Cameron Chaloux (Attorney)</a>
+              <span class="notification-activity-description"><span class="truncate-text">updated contact <a class="truncate-text" href="https://kegging-law.mycasekegging.com/contacts/clients/166256">Cameron Chaloux (Client)</a></span></span>
+            </div>
+            <div class="info">
+              <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:30:12 -0800">a day ago</abbr></span>
+              via
+              <span class="notification-info-via">web</span>
+            </div>
+          </div>
+        </div>
+      <div class="list-group-item d-flex align-items-center">
+        <div class="icon mr-2">
+          <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_case_added-2e0963ea5a.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_case_added@2x-969f253ae5.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_case_added-2e0963ea5a.png" alt="Activity case added 2e0963ea5a" width="27" height="21">
+        </div>
+        <div class="details">
+          <div class="action">
+              <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/82327">Cameron Chaloux (Attorney)</a>
+            <span class="notification-activity-description"><span class="truncate-text">added case <a class="truncate-text" href="https://kegging-law.mycasekegging.com/court_cases/104084">Chaloux - Divorce</a></span></span>
+          </div>
+          <div class="info">
+            <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:24:17 -0800">a day ago</abbr></span>
+            via
+            <span class="notification-info-via">web</span>
+              |
+              <span class="truncate-text notification-info-additional">
+                  <a href="/court_cases/104084">Chaloux - Divorce</a>
+              </span>
+          </div>
+        </div>
+      </div><div class="list-group-item d-flex align-items-center">
+        <div class="icon mr-2">
+          <img srcset="https://assets.mycasekegging.com/packs/notifications/activity_client_added-64029e4429.png 1x, https://assets.mycasekegging.com/packs/notifications/activity_client_added@2x-4e12bc8d19.png 2x" src="https://assets.mycasekegging.com/packs/notifications/activity_client_added-64029e4429.png" alt="Activity client added 64029e4429" width="27" height="21">
+        </div>
+        <div class="details">
+          <div class="action">
+              <a class="notification-user-link" href="https://kegging-law.mycasekegging.com/contacts/attorneys/82327">Cameron Chaloux (Attorney)</a>
+            <span class="notification-activity-description"><span class="truncate-text">added contact <a class="truncate-text" href="https://kegging-law.mycasekegging.com/contacts/clients/166256">Cameron Chaloux (Client)</a></span></span>
+          </div>
+          <div class="info">
+            <span class="notification-info-time"><abbr class="timeago" title="2019-01-22 15:23:46 -0800">a day ago</abbr></span>
+            via
+            <span class="notification-info-via">web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+                <div class="card-footer d-flex justify-content-between align-items-center flex-row-reverse">
+                  <div class="form-inline">
+                    <div class="form-group mb-2">
+                      <label class="mr-2">Rows Per Page:</label>
+                      <select name="per_page" class="form-control custom-select"><option value="5">5</option><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="page-selector pagination mb-0">
+                      <li class="page-item"><span class="page-link">previous</span></li>
+                      <li class="page-item active"><span class="page-link">1</span></li>
+                      <li class="page-item false"><button class="page-link">2</button></li>
+                      <li class="page-item false"><button class="page-link">3</button></li>
+                      <li class="page-item false"><button class="page-link">4</button></li>
+                      <li class="page-item false"><button class="page-link">5</button></li>
+                      <li class="page-item false"><button class="page-link">6</button></li>
+                      <li class="page-item false"><button class="page-link">7</button></li>
+                      <li class="page-item false"><button class="page-link">8</button></li>
+                      <li class="page-item false"><button class="page-link">9</button></li>
+                      <li class="page-item false"><button class="page-link">10</button></li>
+                      <li class="page-item false"><button class="page-link">11</button></li>
+                      <li class="page-item false"><button class="page-link">544</button></li>
+                      <li class="page-item false"><button class="page-link">545</button></li>
+                      <li class="page-item"><button class="page-link">next</button></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <nav class="navbar fixed-bottom navbar-light bg-dark">
+        <div>
+          <a class="btn btn-outline-light" href="#">
+            <i class="fa fa-envelope"></i> Email Integration
+          </a>
+          <a class="btn btn-link" href="https://kegging-law.mycasekegging.com/apps">
+            <img border="0" src="https://assets.mycasekegging.com/packs/apps/marketplace-dcf1beeeff.png" alt="Marketplace dcf1beeeff" />
+          </a>
+        </div>
+        <div>
+          <label class="text-light">
+            My hours billed today:
+          </label>
+          <a class="btn btn-outline-light" href="https://kegging-law.mycasekegging.com/time_entries?all=mine&amp;end_date=01%2F23%2F2019&amp;run=true&amp;show=all&amp;start_date=01%2F23%2F2019&amp;user_id=80972">0.0</a>
+        </div>
+      </nav>
+
+      <div id='quickadd_menu' style='display: none;' class='quickadd_panel navigation-add-item-menu'>
+        <a href='#new_appointment' class='add-event'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/calendar-d553afcd2d.svg" alt="Calendar d553afcd2d" width="25" height="25" />Add Event
+        </a>
+        <a href='#add_document' class='add-document'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/document__sm-555fdc1208.svg" alt="Document  sm 555fdc1208" width="25" height="25" />Add Document
+        </a>
+        <a class="add-task task-form-link" href="#" data-source="top quickadd" data-upgraded-modal="1">
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/task-53b3bdd931.svg" alt="Task 53b3bdd931" width="25" height="25" />Add Task
+        </a>
+        <a class="add-contact" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource(&#39;contact&#39;);" href="https://kegging-law.mycasekegging.com/contacts/clients/new_choice?opened_from=quickadd_add_contact">
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/contact-4a1cb6e942.svg" alt="Contact 4a1cb6e942" width="25" height="25" />Add Contact
+        </a>
+        <a href='#add_court_case' class='add-court-case'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/court_case-b4e96779bc.svg" alt="Court case b4e96779bc" width="25" height="25" />Add Case
+        </a>
+        <a href='#add_message' class='add-message'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/message-dfafd44f7a.svg" alt="Message dfafd44f7a" width="25" height="25" />New Message
+        </a>
+        <a href='#add_time_entry' class='add-time-entry'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/time_entry-89d3ee837c.svg" alt="Time entry 89d3ee837c" width="25" height="25" />Add Time Entry
+        </a>
+        <a href='#add_expense' class='add-expense'>
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/expense__sm-59a1bfaa93.svg" alt="Expense  sm 59a1bfaa93" width="25" height="25" />Add Expense
+        </a>
+        <a class="add-invoice" href="https://kegging-law.mycasekegging.com/bills/open?open_from=quickadd">
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/invoice__sm-2979c869ea.svg" alt="Invoice  sm 2979c869ea" width="25" height="25" />Add Invoice
+        </a>
+        <a class="add-note" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource(&#39;note&#39;);" href="https://kegging-law.mycasekegging.com/notes/new">
+          <img src="https://assets.mycasekegging.com/packs/svg/icons/note-871ceb6654.svg" alt="Note 871ceb6654" width="25" height="25" />Add Note
+        </a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
